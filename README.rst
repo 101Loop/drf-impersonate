@@ -8,11 +8,11 @@ drf impersonate
 .. image:: https://github.com/101loop/drf-impersonate/workflows/CI/badge.svg
     :target: https://github.com/101loop/drf-impersonate
 
-.. image:: https://codecov.io/gh/101loop/drf-impersonate/branch/master/graph/badge.svg
+.. image:: https://codecov.io/gh/101loop/drf-impersonate/branch/main/graph/badge.svg
     :target: https://codecov.io/gh/101loop/drf-impersonate
 
-.. image:: https://results.pre-commit.ci/badge/github/101Loop/drf-impersonate/master.svg
-    :target: https://results.pre-commit.ci/latest/github/101Loop/drf-impersonate/master
+.. image:: https://results.pre-commit.ci/badge/github/101Loop/drf-impersonate/main.svg
+    :target: https://results.pre-commit.ci/latest/github/101Loop/drf-impersonate/main
     :alt: pre-commit.ci status
 
 Documentation
