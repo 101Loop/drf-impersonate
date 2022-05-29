@@ -112,6 +112,10 @@ def release(c, bumpsize=""):
     c.run("python setup.py sdist bdist_wheel")
     c.run("twine upload dist/*")
 
-    c.run('git tag -a {version} -m "New version: {version}"'.format(version=drf_impersonate.__version__))
+    c.run(
+        'git tag -a {version} -m "New version: {version}"'.format(
+            version=drf_impersonate.__version__
+        )
+    )
     c.run("git push --tags")
     c.run("git push origin master")
