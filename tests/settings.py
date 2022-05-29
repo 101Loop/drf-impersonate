@@ -16,6 +16,7 @@ INSTALLED_APPS = [
     "drf_impersonate",
     # if your app has other dependencies that need to be added to the site
     # they should be added here
+    "tests",
 ]
 
 # GENERAL
@@ -28,6 +29,8 @@ TIME_ZONE = "Asia/Kolkata"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+AUTH_USER_MODEL = os.environ.get("AUTH_USER_MODEL", "auth.User")
 
 # CACHES
 # ------------------------------------------------------------------------------
@@ -52,6 +55,7 @@ MIDDLEWARE = [
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
+    "drf_impersonate.middleware.ImpersonationMiddleware",
 ]
 
 # URL
