@@ -8,8 +8,6 @@ Tests for `drf-impersonate` models module.
 """
 from django.test import TestCase
 
-from drf_impersonate import models
-
 
 class TestDrf_impersonate(TestCase):
     @classmethod
