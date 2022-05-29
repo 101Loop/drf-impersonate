@@ -44,6 +44,7 @@ if sys.argv[-1] == "tag":
 
 readme = open("README.rst").read()
 # history = open("CHANGELOG.rst").read().replace(".. :changelog:", "")
+# requirements = open("requirements.txt").readlines()
 
 setup(
     name="drf-impersonate",
@@ -57,7 +58,10 @@ setup(
         "drf_impersonate",
     ],
     include_package_data=True,
-    install_requires=open("requirements.txt").readlines(),
+    install_requires=[
+        "django>=3.2,<5.0",
+        "djangorestframework>=3.12.0,<4.0",
+    ],
     license="MIT",
     zip_safe=False,
     keywords="drf-impersonate",
