@@ -43,7 +43,7 @@ if sys.argv[-1] == "tag":
     sys.exit()
 
 readme = open("README.rst").read()
-history = open("HISTORY.rst").read().replace(".. :changelog:", "")
+history = open("CHANGELOG.rst").read().replace(".. :changelog:", "")
 requirements = open("requirements.txt").readlines()
 
 setup(
