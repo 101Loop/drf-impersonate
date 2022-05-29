@@ -1,12 +1,12 @@
 -r requirements.txt
 
-# packaging dependencies
-invoke>=1.7.1,<2.0.0
-twine>=4.0.0,<5.0.0
-wheel>=0.37.1,<1.0.0
-zest.releaser>=6.22.2,<7.0.0
-
 # code formatting/linting dependencies
 black>=22.3.0,<23.0.0
 flake8>=4.0.1,<5.0.0
+
+# packaging dependencies
+invoke>=1.7.1,<2.0.0
 pre-commit>=2.19.0,<3.0.0
+twine>=4.0.0,<5.0.0
+wheel>=0.37.1,<1.0.0
+zest.releaser>=6.22.2,<7.0.0

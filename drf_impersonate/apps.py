@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 
 class DrfImpersonateConfig(AppConfig):
-    name = 'drf_impersonate'
+    name = "drf_impersonate"
