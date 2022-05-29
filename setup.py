@@ -61,6 +61,7 @@ setup(
     install_requires=[
         "django>=3.2,<5.0",
         "djangorestframework>=3.12.0,<4.0",
+        "pytz>=2022.1,<2023.0",
     ],
     license="MIT",
     zip_safe=False,
