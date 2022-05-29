@@ -43,14 +43,14 @@ if sys.argv[-1] == "tag":
     sys.exit()
 
 readme = open("README.rst").read()
-history = open("CHANGELOG.rst").read().replace(".. :changelog:", "")
+# history = open("CHANGELOG.rst").read().replace(".. :changelog:", "")
 requirements = open("requirements.txt").readlines()
 
 setup(
     name="drf-impersonate",
     version=version,
     description="""Django app to allow superusers to "impersonate" other non-superuser accounts.""",
-    long_description=readme + "\n\n" + history,
+    long_description=readme,
     author="Sumit Singh",
     author_email="sumit.singh4613@gmail.com",
     url="https://github.com/101loop/drf-impersonate",
